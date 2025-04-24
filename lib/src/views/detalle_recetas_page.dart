@@ -70,13 +70,16 @@ class DetalleRecetasPage extends StatelessWidget {
             ),
           ),
           Container(child: Row(children: [Text('    ')])),
-          Center(
-            child: Text(
-              ' Ingredientes: ${extras?['ingredientes']}',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 97, 62, 49),
+          Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Center(
+              child: Text(
+                ' Ingredientes: ${extras?['ingredientes']}',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 97, 62, 49),
+                ),
               ),
             ),
           ),
@@ -91,8 +94,9 @@ class DetalleRecetasPage extends StatelessWidget {
               ),
             ),
           ),
-          Center(
-            child: Container(
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
               child: Text(
                 ' ${extras?['preparacion']}',
                 style: TextStyle(
@@ -100,7 +104,7 @@ class DetalleRecetasPage extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Color.fromARGB(255, 97, 62, 49),
                 ),
-              ), //descripcion del producto añadida
+              ),
             ),
           ),
           Container(child: Row(children: [Text('    ')])),
